@@ -24,4 +24,8 @@ describe('Calculator', () => {
     expect(calculator.MarsAge(calculator.age)).toBe(37/1.88);
   });
 
+  test('it should correctly calculate the age on Jupiter', () => {
+    expect(calculator.JupiterAge(calculator.age)).toBe(37/11.86);
+  });
+
 });

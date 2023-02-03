@@ -19,4 +19,7 @@ export default class Calculator {
     return marsAge;
   }
 
+  JupiterAge(age) {
+
+  }
 }
