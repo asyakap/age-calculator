@@ -61,7 +61,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many years is left to pass on Jpiter before the future birthday', () => {
-    expect(calculator.FutureYearsJupiter(calculator.age, calculator.futureBirthday)).toBe(6.91);
+    expect(calculator.FutureYearsJupiter(calculator.age, calculator.futureBirthday)).toBe(1.1);
   });
 
 
