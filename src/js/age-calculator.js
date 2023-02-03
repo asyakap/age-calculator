@@ -1,7 +1,8 @@
 export default class Calculator {
 
-  constructor(age, pastBirthday, futureBirthday) {
+  constructor(age, date, pastBirthday, futureBirthday) {
     this.age = age;
+    this.date = date;
     this.pastBirthday = pastBirthday;
     this.futureBirthday = futureBirthday;
   }
@@ -77,8 +78,26 @@ export default class Calculator {
     return futureYearsJupiter;
   }
 
-  DaysNumberVenus(age, futureBirthday) {
-    
+  CountDiff(date, today) {
+    //date = new Date(date);
+    //today = new Date(today);
+    //const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+    //const utc1 = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
+    //const utc2 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+    //return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+  }
+
+  DaysNumberEarth(date, futureBirthday) {
+    let birthday = new Date(date);
+    console.log(birthday);
+    let bornYear = birthday.getFullYear();
+    console.log(bornYear);
+    let futureYear = bornYear + futureBirthday;
+    console.log(futureYear);
+    let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate())
+    let today = new Date();
+    let days = this.CountDiff(today, newDate)
+    return days;
   }
 
 }

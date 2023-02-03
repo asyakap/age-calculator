@@ -5,13 +5,15 @@ describe('Calculator', () => {
 
   beforeEach(() => {
     let age = 37;
+    let date = "09/09/1985";
     let pastBirthday = 20;
     let futureBirthday = 50;
-    calculator = new Calculator(age, pastBirthday, futureBirthday);
+    calculator = new Calculator(age, date, pastBirthday, futureBirthday);
   });
 
   test('it should correctly create a constructor and return the age', () => {
     expect(calculator.age).toBe(37);
+    expect(calculator.date).toBe("09/09/1985");
     expect(calculator.pastBirthday).toBe(20);
     expect(calculator.futureBirthday).toBe(50);
   });
@@ -60,12 +62,16 @@ describe('Calculator', () => {
     expect(calculator.FutureYearsMars(calculator.age, calculator.futureBirthday)).toBe(6.91);
   });
 
-  test('it should correctly calculate how many years is left to pass on Jpiter before the future birthday', () => {
+  test('it should correctly calculate how many years is left to pass on Jupiter before the future birthday', () => {
     expect(calculator.FutureYearsJupiter(calculator.age, calculator.futureBirthday)).toBe(1.1);
   });
 
   test('it should correctly calculate how many days is left to pass on Mercury before the future birthday', () => {
     expect(calculator.DaysNumberVenus(calculator.age, calculator.futureBirthday)).toBe(54.17);
+  });
+
+  test('it should correctly count difference in days between two dates', () => {
+    expect(calculator.CountDiff(calculator.date, calculator.today)).toBe(13660);
   });
 
 });
