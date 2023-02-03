@@ -76,7 +76,10 @@ describe('Calculator', () => {
 
   test('it should correctly calculate how many days is left to pass on other planets before the future birthday', () => {
     expect(calculator.DaysToPass(calculator.date, calculator.futureBirthday)).toStrictEqual([19170.83, 7420.97, 2447.34, 387.94]);
+  });
 
+  test('it should correctly return the age that Brad Pitt will be in dog years on the planet Jupiter in 2073', () => {
+    expect(calculator.BradPitt()).toBe(4601);
   });
 
 });

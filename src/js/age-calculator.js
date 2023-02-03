@@ -91,12 +91,10 @@ export default class Calculator {
     let birthday = new Date(date);
     let bornYear = birthday.getFullYear();
     let futureYear = parseInt(bornYear) + parseInt(futureBirthday);
-    console.log(futureYear);
     let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate()).toLocaleDateString();
     let today = new Date().toLocaleDateString();
     date = newDate;
     let days = Math.abs(this.CountDiff(date, today));
-    console.log(birthday, newDate, today, days);
     return days;
   }
 
@@ -111,4 +109,9 @@ export default class Calculator {
     });
     return array;
   }
+
+  BradPitt() {
+
+  }
+
 }
