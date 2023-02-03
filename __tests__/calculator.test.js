@@ -18,11 +18,11 @@ describe('Calculator', () => {
     expect(calculator.MercuryAge(calculator.age)).toBe(154.17);
   });
 
-  test('it should correctly calculate the age on Mars', () => {
+  test('it should correctly calculate the age on Venus', () => {
     expect(calculator.VenusAge(calculator.age)).toBe(59.68);
   });
 
-  test('it should correctly calculate the age on Venus', () => {
+  test('it should correctly calculate the age on Mars', () => {
     expect(calculator.MarsAge(calculator.age)).toBe(19.68);
   });
 
@@ -30,12 +30,16 @@ describe('Calculator', () => {
     expect(calculator.JupiterAge(calculator.age)).toBe(3.12);
   });
 
-  test('it should correctly calculate how many years have passed on each planet since a past birthday', () => {
+  test('it should correctly calculate how many years have passed on Mercury since a past birthday', () => {
     expect(calculator.PassedYearsMercury(calculator.age, calculator.birthday)).toBe(70.83);
   });
 
-  test('it should correctly calculate how many years have passed on each planet since a past birthday', () => {
+  test('it should correctly calculate how many years have passed on Venus since a past birthday', () => {
     expect(calculator.PassedYearsVenus(calculator.age, calculator.birthday)).toBe(27.42);
+  });
+
+  test('it should correctly calculate how many years have passed on Mars since a past birthday', () => {
+    expect(calculator.PassedYearsMars(calculator.age, calculator.birthday)).toBe(27.42);
   });
 
 });
