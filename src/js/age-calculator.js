@@ -88,16 +88,16 @@ export default class Calculator {
   }
 
   DaysNumberEarth(date, futureBirthday) {
-    let birthday = new Date(date);
-    console.log(birthday);
-    let bornYear = birthday.getFullYear();
-    console.log(bornYear);
-    let futureYear = bornYear + futureBirthday;
-    console.log(futureYear);
-    let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate())
-    let today = new Date();
-    let days = this.CountDiff(today, newDate)
-    return days;
+    //let birthday = new Date(date);
+    //console.log(birthday);
+   // let bornYear = birthday.getFullYear();
+    //console.log(bornYear);
+    //let futureYear = bornYear + futureBirthday;
+    //console.log(futureYear);
+    //let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate())
+    //let today = new Date();
+   // let days = this.CountDiff(today, newDate)
+    //return days;
   }
 
 }

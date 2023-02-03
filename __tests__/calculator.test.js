@@ -1,4 +1,4 @@
-import Calculator from './../src/js/age-calculator.js'; 
+import Calculator from './../src/js/age-calculator.js';
 
 describe('Calculator', () => {
   let calculator;
@@ -67,12 +67,12 @@ describe('Calculator', () => {
     expect(calculator.FutureYearsJupiter(calculator.age, calculator.futureBirthday)).toBe(1.1);
   });
 
-  //test('it should correctly calculate how many days is left to pass on Mercury before the future birthday', () => {
-   // expect(calculator.DaysNumberVenus(calculator.age, calculator.futureBirthday)).toBe(54.17);
-  //});
-
   test('it should correctly count difference in days between two dates', () => {
     expect(calculator.CountDiff(calculator.date, calculator.today)).toBe(13661);
+  });
+
+  test('it should correctly calculate how many days is left to pass on Earth before the future birthday', () => {
+    expect(calculator.DaysNumberEarth(calculator.date, calculator.futureBirthday)).toBe(54.17);
   });
 
 });
