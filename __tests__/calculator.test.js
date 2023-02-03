@@ -16,4 +16,8 @@ describe('Calculator', () => {
     expect(calculator.MercuryAge(calculator.age)).toBe(37/0.24);
   });
 
+  test('it should correctly calculate the age on Venus', () => {
+    expect(calculator.VenusAge(calculator.age)).toBe(37/0.62);
+  });
+
 });

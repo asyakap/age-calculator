@@ -9,4 +9,8 @@ export default class Calculator {
     return mercuryAge;
   }
 
+  VenusAge(age) {
+
+  }
+
 }
