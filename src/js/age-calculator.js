@@ -36,7 +36,9 @@ export default class Calculator {
   }
 
   PassedYearsVenus(age, birthday) {
-
+    let passedYearsVenus = (age - birthday) / 0.62;
+    passedYearsVenus = Math.round((passedYearsVenus + Number.EPSILON) * 100) / 100
+    return passedYearsVenus;
   }
 
 }

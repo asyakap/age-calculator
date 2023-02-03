@@ -35,7 +35,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many years have passed on each planet since a past birthday', () => {
-    expect(calculator.PassedYearsVenus(calculator.age, calculator.birthday)).toBe(70.83);
+    expect(calculator.PassedYearsVenus(calculator.age, calculator.birthday)).toBe(27.42);
   });
 
 });
