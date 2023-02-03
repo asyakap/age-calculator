@@ -42,7 +42,9 @@ export default class Calculator {
   }
 
   PassedYearsMars(age, birthday) {
-
+    let passedYearsMars = (age - birthday) / 0.62;
+    passedYearsMars = Math.round((passedYearsMars + Number.EPSILON) * 100) / 100
+    return passedYearsMars;
   }
 
 }
