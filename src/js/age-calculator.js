@@ -109,7 +109,7 @@ export default class Calculator {
     let days = this.DaysNumberEarth(date, futureBirthday);
     let daysArray = [days / 0.24, days / 0.62, days / 1.88, days / 11.86];
     let array = [];
-    daysArray.forEach(function(element) {
+    daysArray.forEach(function (element) {
       element = Math.round((element + Number.EPSILON) * 100) / 100;
       array.push(element);
 
