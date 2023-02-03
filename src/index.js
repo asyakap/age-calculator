@@ -24,10 +24,12 @@ function handleFormSubmission() {
   document.getElementById("marsFutureBirthday").innerText = calculate.FutureYearsMars(age, futureBirthday);
   document.getElementById("marsDays").innerText = array[2];
 
+  let dogYears = calculate.BradPitt();
   document.getElementById("jupiterAge").innerText = calculate.JupiterAge(age);
   document.getElementById("jupiterPastBirthday").innerText = calculate.PassedYearsJupiter(age, pastBirthday);
   document.getElementById("jupiterFutureBirthday").innerText = calculate.FutureYearsJupiter(age, futureBirthday);
   document.getElementById("jupiterDays").innerText = array[3];
+  document.getElementById("jupiter").innerText = dogYears;
 }
 
 window.addEventListener("load", function () {

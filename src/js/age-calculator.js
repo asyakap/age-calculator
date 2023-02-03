@@ -111,7 +111,10 @@ export default class Calculator {
   }
 
   BradPitt() {
-
+    let pittBirthday = 1963;
+    let earthDogYears = (2073 - pittBirthday) / 7;
+    let jupiterDogYears = Math.round((earthDogYears / 11.86 + Number.EPSILON) * 100) / 100;
+    return jupiterDogYears;
   }
 
 }

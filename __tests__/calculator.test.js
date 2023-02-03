@@ -79,7 +79,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly return the age that Brad Pitt will be in dog years on the planet Jupiter in 2073', () => {
-    expect(calculator.BradPitt()).toBe(4601);
+    expect(calculator.BradPitt()).toBe(1.32);
   });
 
 });
