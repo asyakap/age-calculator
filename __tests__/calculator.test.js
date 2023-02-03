@@ -52,4 +52,8 @@ describe('Calculator', () => {
     expect(calculator.FutureYearsMercury(calculator.age, calculator.futureBirthday)).toBe(54.17);
   });
 
+  test('it should correctly calculate how many years is left to pass on Venus before the future birthday', () => {
+    expect(calculator.FutureYearsVenus(calculator.age, calculator.futureBirthday)).toBe(54.17);
+  });
+
 });
