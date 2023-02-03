@@ -61,6 +61,9 @@ export default class Calculator {
   }
 
   FutureYearsVenus(age, futureBirthday) {
+    let futureYearsVenus = (futureBirthday - age) / 0.62;
+    futureYearsVenus = Math.round((futureYearsVenus + Number.EPSILON) * 100) / 100
+    return futureYearsVenus;
   }
 
 }
