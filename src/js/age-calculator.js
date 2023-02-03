@@ -47,4 +47,7 @@ export default class Calculator {
     return passedYearsMars;
   }
 
+  PassedYearsJupiter(age, birthday) {
+  }
+
 }

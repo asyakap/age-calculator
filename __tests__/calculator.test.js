@@ -42,4 +42,8 @@ describe('Calculator', () => {
     expect(calculator.PassedYearsMars(calculator.age, calculator.birthday)).toBe(27.42);
   });
 
+  test('it should correctly calculate how many years have passed on Jupiter since a past birthday', () => {
+    expect(calculator.PassedYearsJupiter(calculator.age, calculator.birthday)).toBe(27.42);
+  });
+
 });
