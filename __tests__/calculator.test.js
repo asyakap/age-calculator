@@ -82,4 +82,8 @@ describe('Calculator', () => {
     expect(calculator.BradPitt()).toBe(1.32);
   });
 
+  test('it should correctly determine how many mayfly lifespans a human user has lived and compare it to the current age of Sun', () => {
+    expect(calculator.MayFly()).toBe(2);
+  });
+
 });

@@ -117,4 +117,8 @@ export default class Calculator {
     return jupiterDogYears;
   }
 
+  MayFly() {
+    
+  }
+
 }
