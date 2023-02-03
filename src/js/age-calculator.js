@@ -20,6 +20,8 @@ export default class Calculator {
   }
 
   JupiterAge(age) {
-
+    let jupiterAge = age / 11.86;
+    jupiterAge = Math.round((jupiterAge + Number.EPSILON) * 100) / 100
+    return jupiterAge;
   }
 }

@@ -25,7 +25,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate the age on Jupiter', () => {
-    expect(calculator.JupiterAge(calculator.age)).toBe(37/11.86);
+    expect(calculator.JupiterAge(calculator.age)).toBe(3.12);
   });
 
 });
