@@ -71,5 +71,7 @@ export default class Calculator {
     futureYearsMars = Math.round((futureYearsMars + Number.EPSILON) * 100) / 100
     return futureYearsMars;
   }
+  FutureYearsJupiter(age, futureBirthday) {
+  }
 
 }
