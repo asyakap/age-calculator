@@ -5,7 +5,8 @@ export default class Calculator {
   }
 
   MercuryAge(age) {
-    
+    let mercuryAge = age / 0.24;
+    return mercuryAge;
   }
 
 }
