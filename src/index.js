@@ -1,7 +1,9 @@
 import Calculator from './../src/js/age-calculator.js';
+import './css/styles.css';
 
 function handleFormSubmission() {
   event.preventDefault();
+  document.querySelector("div#result").removeAttribute("class");
   const calculate = new Calculator();
   let age = document.getElementById("inputAge").value;
   let pastBirthday = document.getElementById("inputPastBirthday").value;

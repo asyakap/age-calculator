@@ -12,10 +12,6 @@ _A web application that returns user's age on different planets._
 * HTML / CSS
 * Webpack
 
-## Github Pages Site
-
-[Age Calculator](https://asyakap.github.io/age-calculator)
-
 ## Setup/Installation Requirements
 
 * _Clone this repository to your desktop_
