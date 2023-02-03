@@ -75,7 +75,8 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many days is left to pass on other planets before the future birthday', () => {
-    expect(calculator.DaysToPass(calculator.date, calculator.futureBirthday)).toBe([]);
+    expect(calculator.DaysToPass(calculator.date, calculator.futureBirthday)).toStrictEqual([19170.83, 7420.97, 2447.34, 387.94]);
+
   });
 
 });

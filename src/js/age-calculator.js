@@ -91,7 +91,7 @@ export default class Calculator {
     let birthday = new Date(date);
     let bornYear = birthday.getFullYear();
     let futureYear = bornYear + futureBirthday;
-    let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate()); 
+    let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate());
     let today = new Date();
     date = newDate;
     let days = Math.abs(this.CountDiff(date, today));
@@ -99,5 +99,14 @@ export default class Calculator {
   }
 
   DaysToPass(date, futureBirthday) {
-  }   
+    let days = this.DaysNumberEarth(date, futureBirthday);
+    let daysArray = [days / 0.24, days / 0.62, days / 1.88, days / 11.86];
+    let array = [];
+    daysArray.forEach(function(element) {
+      element = Math.round((element + Number.EPSILON) * 100) / 100;
+      array.push(element);
+
+    });
+    return array;
+  }
 }
