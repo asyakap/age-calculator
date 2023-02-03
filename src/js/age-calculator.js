@@ -48,6 +48,9 @@ export default class Calculator {
   }
 
   PassedYearsJupiter(age, birthday) {
+    let passedYearsJupiter = (age - birthday) / 0.62;
+    passedYearsJupiter = Math.round((passedYearsJupiter + Number.EPSILON) * 100) / 100
+    return passedYearsJupiter;
   }
 
 }
