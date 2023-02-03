@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Weekday Calculator</title>
+    <title>Age calculator</title>
 </head>
 <body>
-    <h2>Add a date :</h2>
-    <form id="new-date">
-      <label for="date">Your date:</label>
-      <input type="text" id="input" name="input">
+    <h1>Welcome to a Super Galactic Age Calculator!</h1>
+    <h2>Let's calculate your age on different planets and see how time flies there:</h2>
+    <form id="age-calculator">
+      <label for="age">Your age:</label>
+      <input type="number" id="inputAge" name="inputAge">
       <br>
       <br>
-      <button type="submit">Add</button>
+      <label for="pastBirthday">Past birthday:</label>
+      <input type="number" id="inputPastBirthday" name="inputPastBirthday">
+      <br>
+      <br>
+      <label for="futureBirthday">Future birthday:</label>
+      <input type="number" id="inputFutureBirthday" name="inputFutureBirthday">
+      <br>
+      <br>
+      <button type="submit">Calculate</button>
     </form>
-    <h4 id="output"></h4>
+    <h4 >Your age on Mercury would be <span id="mercuryAge"></span>.</h4>
+    <h4 ><span id="mercuryPastBirthday"></span> years have passed from your past birthday.</h4>
+    <h4 >Your future birthday is in <span id="mercuryFutureBirthday"></span> years.</h4>
+    <h4 >Your age on Venus would be <span id="venusAge"></span></h4>
+    <h4 ><span id="venusPastBirthday"></span> years have passed from your past birthday.</h4>
+    <h4 >Your future birthday is in <span id="venusFutureBirthday"></span> years.</h4>
+    <h4 >Your age on Mars would be <span id="marsAge"></span>.</h4>
+    <h4 ><span id="marsPastBirthday"></span> years have passed from your past birthday.</h4>
+    <h4 >Your future birthday is in <span id="marsFutureBirthday"></span> years.</h4>
+    <h4 >Your age on Jupiter would be <span id="jupiterAge"></span>.</h4>
+    <h4 ><span id="jupiterPastBirthday"></span> years have passed from your past birthday.</h4>
+    <h4 >Your future birthday is in <span id="jupiterFutureBirthday"></span> years.</h4>
 </body>
 </html>
