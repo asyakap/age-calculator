@@ -1,8 +1,9 @@
 export default class Calculator {
 
-  constructor(age, birthday) {
+  constructor(age, pastBirthday, futureBirthday) {
     this.age = age;
-    this.birthday = birthday;
+    this.pastBirthday = pastBirthday;
+    this.futureBirthday = futureBirthday;
   }
 
   MercuryAge(age) {
@@ -29,28 +30,32 @@ export default class Calculator {
     return jupiterAge;
   }
 
-  PassedYearsMercury(age, birthday) {
-    let passedYearsMercury = (age - birthday) / 0.24;
+  PassedYearsMercury(age, pastBirthday) {
+    let passedYearsMercury = (age - pastBirthday) / 0.24;
     passedYearsMercury = Math.round((passedYearsMercury + Number.EPSILON) * 100) / 100
     return passedYearsMercury;
   }
 
-  PassedYearsVenus(age, birthday) {
-    let passedYearsVenus = (age - birthday) / 0.62;
+  PassedYearsVenus(age, pastBirthday) {
+    let passedYearsVenus = (age - pastBirthday) / 0.62;
     passedYearsVenus = Math.round((passedYearsVenus + Number.EPSILON) * 100) / 100
     return passedYearsVenus;
   }
 
-  PassedYearsMars(age, birthday) {
-    let passedYearsMars = (age - birthday) / 0.62;
+  PassedYearsMars(age, pastBirthday) {
+    let passedYearsMars = (age - pastBirthday) / 0.62;
     passedYearsMars = Math.round((passedYearsMars + Number.EPSILON) * 100) / 100
     return passedYearsMars;
   }
 
-  PassedYearsJupiter(age, birthday) {
-    let passedYearsJupiter = (age - birthday) / 0.62;
+  PassedYearsJupiter(age, pastBirthday) {
+    let passedYearsJupiter = (age - pastBirthday) / 0.62;
     passedYearsJupiter = Math.round((passedYearsJupiter + Number.EPSILON) * 100) / 100
     return passedYearsJupiter;
+  }
+
+  FutureYearsMercury(age, pastBirthday) {
+
   }
 
 }

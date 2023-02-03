@@ -5,13 +5,15 @@ describe('Calculator', () => {
 
   beforeEach(() => {
     let age = 37;
-    let birthday = 20;
-    calculator = new Calculator(age, birthday);
+    let pastBirthday = 20;
+    let futureBirthday = 50;
+    calculator = new Calculator(age, pastBirthday, futureBirthday);
   });
 
   test('it should correctly create a constructor and return the age', () => {
     expect(calculator.age).toBe(37);
-    expect(calculator.birthday).toBe(20);
+    expect(calculator.pastBirthday).toBe(20);
+    expect(calculator.futureBirthday).toBe(50);
   });
 
   test('it should correctly calculate the age on Mercury', () => {
@@ -31,19 +33,23 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many years have passed on Mercury since a past birthday', () => {
-    expect(calculator.PassedYearsMercury(calculator.age, calculator.birthday)).toBe(70.83);
+    expect(calculator.PassedYearsMercury(calculator.age, calculator.pastBirthday)).toBe(70.83);
   });
 
   test('it should correctly calculate how many years have passed on Venus since a past birthday', () => {
-    expect(calculator.PassedYearsVenus(calculator.age, calculator.birthday)).toBe(27.42);
+    expect(calculator.PassedYearsVenus(calculator.age, calculator.pastBirthday)).toBe(27.42);
   });
 
   test('it should correctly calculate how many years have passed on Mars since a past birthday', () => {
-    expect(calculator.PassedYearsMars(calculator.age, calculator.birthday)).toBe(27.42);
+    expect(calculator.PassedYearsMars(calculator.age, calculator.pastBirthday)).toBe(27.42);
   });
 
   test('it should correctly calculate how many years have passed on Jupiter since a past birthday', () => {
-    expect(calculator.PassedYearsJupiter(calculator.age, calculator.birthday)).toBe(27.42);
+    expect(calculator.PassedYearsJupiter(calculator.age, calculator.pastBirthday)).toBe(27.42);
+  });
+
+  test('it should correctly calculate how many years is left to pass on Mercury before the future birthday', () => {
+    expect(calculator.FutureYearsMercury(calculator.age, calculator.futureBirthday)).toBe(70.83);
   });
 
 });
