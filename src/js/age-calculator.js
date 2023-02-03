@@ -1,7 +1,8 @@
 export default class Calculator {
 
-  constructor(age) {
+  constructor(age, birthday) {
     this.age = age;
+    this.birthday = birthday;
   }
 
   MercuryAge(age) {
@@ -27,4 +28,9 @@ export default class Calculator {
     jupiterAge = Math.round((jupiterAge + Number.EPSILON) * 100) / 100
     return jupiterAge;
   }
+
+  PassedYearsMercury(age, birthday) {
+
+  }
+
 }

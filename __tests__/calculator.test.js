@@ -5,11 +5,13 @@ describe('Calculator', () => {
 
   beforeEach(() => {
     let age = 37;
-    calculator = new Calculator(age);
+    let birthday = 20;
+    calculator = new Calculator(age, birthday);
   });
 
   test('it should correctly create a constructor and return the age', () => {
     expect(calculator.age).toBe(37);
+    expect(calculator.birthday).toBe(20);
   });
 
   test('it should correctly calculate the age on Mercury', () => {
@@ -26,6 +28,10 @@ describe('Calculator', () => {
 
   test('it should correctly calculate the age on Jupiter', () => {
     expect(calculator.JupiterAge(calculator.age)).toBe(3.12);
+  });
+
+  test('it should correctly calculate how many years have passed on each planet since a past birthday', () => {
+    expect(calculator.PassedYearsMercury(calculator.age, calculator.birthday)).toBe(3.12);
   });
 
 });
