@@ -93,11 +93,11 @@ export default class Calculator {
     let futureYear = bornYear + futureBirthday;
     let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate()); 
     let today = new Date();
-    console.log(today, newDate);
     date = newDate;
     let days = Math.abs(this.CountDiff(date, today));
-    console.log(days);
     return days;
   }
 
+  DaysToPass(date, futureBirthday) {
+  }   
 }
