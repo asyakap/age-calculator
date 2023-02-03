@@ -12,4 +12,8 @@ describe('Calculator', () => {
     expect(calculator.age).toBe(37);
   });
 
+  test('it should correctly calculate the age on Mercury', () => {
+    expect(calculator.MercuryAge(calculator.age)).toBe(37/0.24);
+  });
+
 });
