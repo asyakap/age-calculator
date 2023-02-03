@@ -18,7 +18,7 @@ export default class Calculator {
     venusAge = Math.round((venusAge + Number.EPSILON) * 100) / 100;
     return venusAge;
   }
-  
+
   MarsAge(age) {
     let marsAge = age / 1.88;
     marsAge = Math.round((marsAge + Number.EPSILON) * 100) / 100;
@@ -88,16 +88,16 @@ export default class Calculator {
   }
 
   DaysNumberEarth(date, futureBirthday) {
-    //let birthday = new Date(date);
-    //console.log(birthday);
-   // let bornYear = birthday.getFullYear();
-    //console.log(bornYear);
-    //let futureYear = bornYear + futureBirthday;
-    //console.log(futureYear);
-    //let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate())
-    //let today = new Date();
-   // let days = this.CountDiff(today, newDate)
-    //return days;
+    let birthday = new Date(date);
+    let bornYear = birthday.getFullYear();
+    let futureYear = bornYear + futureBirthday;
+    let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate()); 
+    newDate ="\"newDate\"";
+    let today = new Date();
+    console.log(today, newDate);
+    let days = this.CountDiff(today, newDate);
+    console.log(days);
+    return days;
   }
 
 }

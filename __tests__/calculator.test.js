@@ -6,7 +6,6 @@ describe('Calculator', () => {
   beforeEach(() => {
     let age = 37;
     let date = "09/09/1985";
-    let today = "02/03/2023";
     let pastBirthday = 20;
     let futureBirthday = 50;
     calculator = new Calculator(age, date, pastBirthday, futureBirthday);
@@ -72,7 +71,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many days is left to pass on Earth before the future birthday', () => {
-    expect(calculator.DaysNumberEarth(calculator.date, calculator.futureBirthday)).toBe(54.17);
+    expect(calculator.DaysNumberEarth(calculator.date, calculator.futureBirthday)).toBe(4601);
   });
 
 });
