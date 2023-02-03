@@ -66,4 +66,7 @@ export default class Calculator {
     return futureYearsVenus;
   }
 
+  FutureYearsMars(age, futureBirthday) {
+  }
+
 }
