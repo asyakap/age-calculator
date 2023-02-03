@@ -7,6 +7,13 @@ export default class Calculator {
     this.futureBirthday = futureBirthday;
   }
 
+  MayFly(age) {
+    let flyAge = age * 365 * 24 * 12;
+    let sunFlyAge = 4.603 * 1000000000 * 365 * 24 * 12;
+    let array = [flyAge, sunFlyAge];
+    return array;
+  }
+
   MercuryAge(age) {
     let mercuryAge = age / 0.24;
     mercuryAge = Math.round((mercuryAge + Number.EPSILON) * 100) / 100;
@@ -117,8 +124,5 @@ export default class Calculator {
     return jupiterDogYears;
   }
 
-  MayFly() {
-    
-  }
 
 }

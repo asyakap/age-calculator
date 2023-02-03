@@ -83,7 +83,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly determine how many mayfly lifespans a human user has lived and compare it to the current age of Sun', () => {
-    expect(calculator.MayFly()).toBe(2);
+    expect(calculator.MayFly(calculator.age)).toStrictEqual([3889440, 483867360000000]);
   });
 
 });
