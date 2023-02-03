@@ -54,8 +54,10 @@ export default class Calculator {
     return passedYearsJupiter;
   }
 
-  FutureYearsMercury(age, pastBirthday) {
-
+  FutureYearsMercury(age, futureBirthday) {
+    let futureYearsMercury = (futureBirthday - age) / 0.24;
+    futureYearsMercury = Math.round((futureYearsMercury + Number.EPSILON) * 100) / 100
+    return futureYearsMercury;
   }
 
 }

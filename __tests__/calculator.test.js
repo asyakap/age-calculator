@@ -49,7 +49,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many years is left to pass on Mercury before the future birthday', () => {
-    expect(calculator.FutureYearsMercury(calculator.age, calculator.futureBirthday)).toBe(70.83);
+    expect(calculator.FutureYearsMercury(calculator.age, calculator.futureBirthday)).toBe(54.17);
   });
 
 });
