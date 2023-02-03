@@ -77,4 +77,8 @@ export default class Calculator {
     return futureYearsJupiter;
   }
 
+  DaysNumberVenus(age, futureBirthday) {
+    
+  }
+
 }

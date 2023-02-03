@@ -24,7 +24,7 @@ _A web application that returns user's age on different planets._
 * _Build the project using webpack with ``npm run build``_
 * _Package and open the project in your browser using ``npm run start``_
 * _Lint JS files in the ``src`` folder with ``npm run lint``_
-* _Runn tests with Jest using ``npm run test``_
+* _Run tests with Jest using ``npm run test``_
 
 ## Known Bugs
 
