@@ -92,10 +92,10 @@ export default class Calculator {
     let bornYear = birthday.getFullYear();
     let futureYear = bornYear + futureBirthday;
     let newDate = new Date(futureYear, birthday.getMonth(), birthday.getDate()); 
-    newDate ="\"newDate\"";
     let today = new Date();
     console.log(today, newDate);
-    let days = this.CountDiff(today, newDate);
+    date = newDate;
+    let days = Math.abs(this.CountDiff(date, today));
     console.log(days);
     return days;
   }
