@@ -30,6 +30,9 @@ function handleFormSubmission() {
   document.getElementById("jupiterFutureBirthday").innerText = calculate.FutureYearsJupiter(age, futureBirthday);
   document.getElementById("jupiterDays").innerText = array[3];
   document.getElementById("jupiter").innerText = dogYears;
+
+  document.getElementById("mayFly").innerText = calculate.MayFly(age)[0];
+  document.getElementById("sunFly").innerText = calculate.MayFly(age)[1];
 }
 
 window.addEventListener("load", function () {
