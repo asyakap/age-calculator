@@ -35,4 +35,8 @@ export default class Calculator {
     return passedYearsMercury;
   }
 
+  PassedYearsVenus(age, birthday) {
+
+  }
+
 }
