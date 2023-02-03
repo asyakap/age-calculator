@@ -15,7 +15,8 @@ export default class Calculator {
   }
   
   MarsAge(age) {
-
+    let marsAge = age / 1.88;
+    return marsAge;
   }
 
 }
