@@ -43,13 +43,13 @@ export default class Calculator {
   }
 
   PassedYearsMars(age, pastBirthday) {
-    let passedYearsMars = (age - pastBirthday) / 0.62;
+    let passedYearsMars = (age - pastBirthday) / 1.88;
     passedYearsMars = Math.round((passedYearsMars + Number.EPSILON) * 100) / 100
     return passedYearsMars;
   }
 
   PassedYearsJupiter(age, pastBirthday) {
-    let passedYearsJupiter = (age - pastBirthday) / 0.62;
+    let passedYearsJupiter = (age - pastBirthday) / 11.86;
     passedYearsJupiter = Math.round((passedYearsJupiter + Number.EPSILON) * 100) / 100
     return passedYearsJupiter;
   }
@@ -67,6 +67,9 @@ export default class Calculator {
   }
 
   FutureYearsMars(age, futureBirthday) {
+    let futureYearsMars = (futureBirthday - age) / 1.88;
+    futureYearsMars = Math.round((futureYearsMars + Number.EPSILON) * 100) / 100
+    return futureYearsMars;
   }
 
 }

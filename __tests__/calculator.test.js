@@ -41,11 +41,11 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many years have passed on Mars since a past birthday', () => {
-    expect(calculator.PassedYearsMars(calculator.age, calculator.pastBirthday)).toBe(27.42);
+    expect(calculator.PassedYearsMars(calculator.age, calculator.pastBirthday)).toBe(9.04);
   });
 
   test('it should correctly calculate how many years have passed on Jupiter since a past birthday', () => {
-    expect(calculator.PassedYearsJupiter(calculator.age, calculator.pastBirthday)).toBe(27.42);
+    expect(calculator.PassedYearsJupiter(calculator.age, calculator.pastBirthday)).toBe(1.43);
   });
 
   test('it should correctly calculate how many years is left to pass on Mercury before the future birthday', () => {
@@ -57,7 +57,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many years is left to pass on Mars before the future birthday', () => {
-    expect(calculator.FutureYearsMars(calculator.age, calculator.futureBirthday)).toBe(20.97);
+    expect(calculator.FutureYearsMars(calculator.age, calculator.futureBirthday)).toBe(6.91);
   });
 
 });
