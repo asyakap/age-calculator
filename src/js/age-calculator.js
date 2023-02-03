@@ -30,7 +30,9 @@ export default class Calculator {
   }
 
   PassedYearsMercury(age, birthday) {
-
+    let passedYearsMercury = (age - birthday) / 0.24;
+    passedYearsMercury = Math.round((passedYearsMercury + Number.EPSILON) * 100) / 100
+    return passedYearsMercury;
   }
 
 }

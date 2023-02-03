@@ -31,7 +31,7 @@ describe('Calculator', () => {
   });
 
   test('it should correctly calculate how many years have passed on each planet since a past birthday', () => {
-    expect(calculator.PassedYearsMercury(calculator.age, calculator.birthday)).toBe(3.12);
+    expect(calculator.PassedYearsMercury(calculator.age, calculator.birthday)).toBe(70.83);
   });
 
 });
