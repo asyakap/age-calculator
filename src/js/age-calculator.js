@@ -10,7 +10,8 @@ export default class Calculator {
   }
 
   VenusAge(age) {
-
+    let venusAge = age / 0.62;
+    return venusAge;
   }
 
 }
