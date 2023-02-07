@@ -1,15 +1,21 @@
 export default class Calculator {
 
-  constructor(age, date, pastBirthday, futureBirthday) {
+  constructor(age, date, pastBirthday, futureBirthday, today) {
     this.age = age;
     this.date = date;
     this.pastBirthday = pastBirthday;
     this.futureBirthday = futureBirthday;
+    this.today = today;
   }
 
   MayFly(age) {
-    let flyAge = age * 365 * 24 * 12;
-    let sunFlyAge = 4.603 * 1000000000 * 365 * 24 * 12;
+    const daysInYear = 365
+    const hoursInDay = 24
+    const months = 12
+    const earthBln = 4.603
+    const oneBln = 1000000000
+    let flyAge = age * daysInYear * hoursInDay * months;
+    let sunFlyAge = earthBln * oneBln * daysInYear * hoursInDay * months;
     let array = [flyAge, sunFlyAge];
     return array;
   }
@@ -87,7 +93,7 @@ export default class Calculator {
 
   CountDiff(date, today) {
     date = new Date(date);
-    today = new Date();
+    today = new Date("02/03/2023");
     const _MS_PER_DAY = 1000 * 60 * 60 * 24;
     const utc1 = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate());
     const utc2 = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());

@@ -8,7 +8,8 @@ describe('Calculator', () => {
     let date = "09/09/1985";
     let pastBirthday = 20;
     let futureBirthday = 50;
-    calculator = new Calculator(age, date, pastBirthday, futureBirthday);
+    let today = "02/03/2023";
+    calculator = new Calculator(age, date, pastBirthday, futureBirthday, today);
   });
 
   test('it should correctly create a constructor and return the age', () => {
@@ -16,6 +17,7 @@ describe('Calculator', () => {
     expect(calculator.date).toBe("09/09/1985");
     expect(calculator.pastBirthday).toBe(20);
     expect(calculator.futureBirthday).toBe(50);
+    expect(calculator.today).toBe("02/03/2023");
   });
 
   test('it should correctly calculate the age on Mercury', () => {
